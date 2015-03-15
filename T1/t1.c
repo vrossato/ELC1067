@@ -11,7 +11,7 @@ void le_alunos(int* matriculas_aluno, char nomes[][50], int *n){
 	        printf("Não foi possível abrir o arquivo\n");
 	}else{
 	while(feof(f) == 0 ){
-		if(fscanf(f,"%d",&mat) < 0)
+		if(fscanf(f,"%d",&mat) <= 0)
 			break;
 		i=0;
 		c=fgetc(f);

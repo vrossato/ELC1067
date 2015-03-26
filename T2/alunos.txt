@@ -1,11 +1,11 @@
-20131760 Han Solo
 201312857 Obi-Wan Kenobi
+201326126 Leia Organa Solo
 201329037 Mace Windu
 201310379 Ben Skywalker
 20133246 Jango Fett
 201330658 Luke Skywalker
 201331975 Darth Vader
-201326126 Leia Organa Solo
+20131760 Han Solo
 20136545 Lando Calrissian
 201312778 Boba Fett
 201320855 Anakin Skywalker

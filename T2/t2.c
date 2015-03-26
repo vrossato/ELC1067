@@ -67,7 +67,7 @@ void busca_aluno(char* nome, char** nomes, int n, float* medias){
 
 int main(int argc, char** argv){
 
-    int* matriculas, *n;
+    int* matriculas, n, i;
     char* nome;
     char** nomes;
     float* medias;
@@ -89,6 +89,7 @@ int main(int argc, char** argv){
         printf("\nErro na alocacao de memoria de matriculas.\n");
         exit(1);
     }
+
     nomes = (char**) malloc(50* sizeof(char*));
     if(nomes == NULL){
         printf("\nErro na alocacao de memoria de nomes.\n");
@@ -107,7 +108,9 @@ int main(int argc, char** argv){
     free(nome);
     free(matriculas);
     free(medias);
-    free(nomes);
+
+    for (i = 0; i < n; i++)
+        free(nomes[i]);
 
     return 0;
 }
